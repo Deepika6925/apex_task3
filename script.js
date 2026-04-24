@@ -26,9 +26,9 @@ function loadQuestion() {
 
     btn.onclick = () => {
       if (option === questions[current].answer) {
-        alert("Correct ✅");
+        alert("Correct ");
       } else {
-        alert("Wrong ❌");
+        alert("Wrong ");
       }
     };
 
@@ -41,7 +41,7 @@ function nextQuestion() {
   if (current < questions.length) {
     loadQuestion();
   } else {
-    alert("Quiz Finished 🎉");
+    alert("Quiz Finished ");
   }
 }
 
@@ -52,6 +52,6 @@ function getJoke() {
     .then(res => res.json())
     .then(data => {
       document.getElementById("joke").innerText =
-        data.setup + " 😂 " + data.punchline;
+        data.setup +  data.punchline;
     });
 }
