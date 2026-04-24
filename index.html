@@ -1,2 +1,28 @@
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Web Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="card fade-in">
+    <h1 class="gradient-text">My Interactive App</h1>
+
+    <!-- Quiz Section -->
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <button onclick="nextQuestion()">Next</button>
+
+    <!-- API Section -->
+    <div class="api-box">
+      <button onclick="getJoke()">Get Joke 😂</button>
+      <p id="joke"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
